@@ -1,0 +1,10 @@
+{
+    "name": "vibrate",
+    "description": "Example usage of the vibrate WebApi",
+    "developer": {
+        "name": "mozilla",
+        "url": "http://github.com/mozilla/webapi-examples"
+    },
+    "launch_path": "/index.html",
+    "default_locale": "en"
+}
