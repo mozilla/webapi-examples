@@ -4,27 +4,45 @@
     <meta charset="utf-8">
     <title>navigator.vibrate</title>
     <meta name="viewport" content="width=device-width">
+
     <style>
+      body {
+        font-size: 14px;
+      }
       button {
         display: block;
         width: 100%;
         line-height: 40px;
         margin: 1em 0;
-        font-size: 14px;
       }
       h1 {
         text-align: center;
       }
+      #support-message {
+        display: none;
+      }
+      #support-message.api-missing {
+        display: block;
+      }
     </style>
   </head>
   <body>
+
     <h1>Vibration API Example</h1>
+
+    <p id="support-message">
+      It looks like your environment doesn't support the Device Vibration API. If it actually does,
+      <a href="https://github.com/mozilla/webapi-examples/issues">let us know!</a>
+    </p>
+
     <button id="vibrate-200"><code>vibrate(200)</code></button>
     <button id="vibrate-pulse"><code>vibrate([100,200,100,200,100])</code></button>
     <button id="vibrate-sos"><code>sos()</code></button>
     <button id="vibrate-long">very long vibration</button>
     <button id="vibrate-stop">stop all vibration</button>
-    <script type="text/javascript" src="js/app.js"></script>
+
+    <script type="text/javascript" src="app.js"></script>
+
   </body>
 </html>
 
